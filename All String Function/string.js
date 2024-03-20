@@ -15,7 +15,7 @@ console.log(str.concat(str2));
 
 console.log(str.endsWith("h"));    // true
 console.log(str.startsWith("a")); // false
-console.log(str.includes("g"));     // true
+console.log(str.includes("shah"));     // false
 
 console.log(str.toLowerCase());     // sagar
 console.log(str.toUpperCase());     // SAGAR //console.log(str.toUpperCase); //method print

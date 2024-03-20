@@ -34,6 +34,8 @@ console.log(str.repeat(2));        //Sagar ShahSagar Shah
 
 console.log(str.substring(1,7));   // gar Sh
 console.log(str.slice(1,4));       //rag
+let a = "This Note Is 500";
+console.log(a.slice("This Note Is".length+1)); //length is 13 without including number
 
 console.log(str.valueOf());        // Sagar Shah
 

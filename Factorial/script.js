@@ -1,15 +1,19 @@
-// let arr = [];
+// first method
 
-// for (i = 1; i <= 5; i++) {
-//   arr.push(i);
-// }
-// console.log(arr);
+let arr1 = [];
 
-// let n = arr.reduce((a, b) => {
-//   return a * b;
-// });
-// console.log("Factorial of 5 number is : " + n);
+for (i = 1; i <= 5; i++) {
+  arr1.push(i);
+}
+console.log(arr1);
 
+let n = arr1.reduce((a, b) => {
+  return a * b;
+});
+console.log("Factorial of 5 number is : " + n);
+
+
+// second method
 let num = 5;
 
 function factorial(number) {
@@ -18,7 +22,20 @@ function factorial(number) {
   let fact = arr.slice(1).reduce((a, b) => {
     return a * b;
   });
-  console.log(fact);
+  return fact;
 }
 
-factorial(num);
+console.log(factorial(num));
+
+// Third Method
+
+function factfor(number){
+    let fac = 1;
+    for (let index = 1; index <= number; index++) {
+         fac = fac * index;
+        
+    }
+    return fac;
+}
+
+console.log(factorial(num));

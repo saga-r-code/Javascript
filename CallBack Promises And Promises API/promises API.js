@@ -115,8 +115,7 @@ p5.then((data) => {
 })
 
 
-let p6 = Promise.any([prom1, prom2, prom3, prom4, prom5, prom6]) //if any prom resolve then return value and if all prom reject then return Agreegate error
-
+let p6 = Promise.any([prom1, prom2, prom3, prom4, prom5, prom6])/if any prom resolve then return value else return error
 p6.then((data) => {
     console.log(data);
 }).catch((err) => {
@@ -125,7 +124,7 @@ p6.then((data) => {
 
 
 let p7 = Promise.reject([prom1, prom2, prom3, prom4, prom5, prom6]) 
-// Handle the rejected value of the promise
+// Handle the rejected value of the promise and if all prom reject then return Agreegate error
 p7.then((data) => {
     console.log(data);
 }).catch((err) => {

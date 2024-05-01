@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background: black;
+        width: 100%;
+        height: 100%;
+      }
+
+      .bulb {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background: url("images.jpg");
+      }
+
+      p {
+        
+        position: absolute;
+        top:50%;
+        right:50%;
+        transform: translate(50%,-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <p><img src="skele.jpg" height="700px"></p>
+    <div id="blub" class="bulb"></div>
+
+    <script>
+      setInterval(async function () {
+        let r = Math.floor(Math.random() * 255 + 1);
+        let g = Math.floor(Math.random() * 255 + 1);
+        let b = Math.floor(Math.random() * 255 + 1);
+        document.querySelector("#blub").classList.toggle("bulb");
+
+        // document.querySelector(".blub").style.backgroundColor = `rgb(${r},${g},${b})`;
+      }, 100);
+    </script>
+  </body>
+</html>

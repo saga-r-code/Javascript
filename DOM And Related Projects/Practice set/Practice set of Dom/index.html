@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="alert(`hey bro`)">Hii</button>
+    <button onclick="alert(`chal bro `)">Byy</button>
+    <button class="Google">Google</button>
+    <button class="Facebook">Facebook</button>
+
+    <script>
+      document.querySelector(".Google").addEventListener("click", () => {
+        window.location = "https://google.com";
+      });
+
+      document.querySelector(".Facebook").addEventListener("click", () => {
+        window.location = "https://fb.com";
+      });
+    </script>
+  </body>
+</html>
